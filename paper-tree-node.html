@@ -32,7 +32,7 @@ Custom property | Description | Default
 <link rel="import" href="../iron-icons/iron-icons.html">
 
 <dom-module id="paper-tree-node">
-
+  <template>
     <style>
 
         :host(.selected) > .node-container > .node-row {
@@ -105,9 +105,7 @@ Custom property | Description | Default
         [hidden] {
             display: none;
         }
-    </style>
-
-    <template>
+    </style>   
         <div class="node-container">
             <div class="node-row">
                 <span class$="{{_computeClass(data.*)}}" on-click="toggleChildren"></span>
